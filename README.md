@@ -17,7 +17,7 @@ $ go build -o dist ./cmd/overlay
 ## Run
 
 ```sh
-$ ./dist/overlay
+$ sudo ./dist/overlay
 ```
 
 ## Configuration
