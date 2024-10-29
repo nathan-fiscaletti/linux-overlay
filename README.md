@@ -5,6 +5,12 @@ A simple OBS overlay for Linux that displays the state of keyboard and mouse but
 ## Build
 
 ```sh
+$ ./build.sh
+```
+
+Alternately, you can build the binary yourself:
+
+```sh
 $ go build -o dist ./cmd/overlay
 ```
 
