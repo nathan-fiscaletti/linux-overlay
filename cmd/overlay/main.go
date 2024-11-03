@@ -16,6 +16,12 @@ import (
 var outChan = make(chan any)
 
 func main() {
+	// Make sure we are running as root
+	if os.Geteuid() != 0 {
+		fmt.Println("Error: This program must be run as root.")
+		return
+	}
+
 	exePath, err := os.Executable()
 	if err != nil {
 		fmt.Println("Error:", err)

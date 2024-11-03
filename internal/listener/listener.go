@@ -24,7 +24,6 @@ func Listen(ctx context.Context, cfg config.Config, outChan chan any) error {
 		fmt.Printf("Keyboard found: %s\n", keyboard.Name)
 		go handleKeyboardEvents(ctx, cfg, outChan, keyboard)
 	}
-	fmt.Println()
 
 	mice, err := input.ListPointerDevices()
 	if err != nil {

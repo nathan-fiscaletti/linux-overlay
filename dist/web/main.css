@@ -1,12 +1,46 @@
 .key {
-    border: 1px solid black;
+    border: 2px solid rgb(255, 255, 255);
     width: 20px;
     height: 20px;
     padding: 8px;
-    color: black;
+    color: #00ffea;
+    font-weight: bold;
+    transform: skew(-15deg);
+    text-align: center;
 }
 
 .pressed {
-    background-color: red;
-    color: white;
+    background-color: rgb(60, 242, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transform: skew(-15deg);
+    text-align: center;
+}
+
+.mouse-default {
+    background-repeat: no-repeat;
+    background-image: url('mouse.png');
+    width: 150px;
+    background-size: contain;
+}
+
+.mouse-lmb {
+    background-repeat: no-repeat;
+    background-image: url('mouse_LMB.png');
+    width: 150px;
+    background-size: contain;
+}
+
+.mouse-rmb {
+    background-repeat: no-repeat;
+    background-image: url('mouse_RMB.png');
+    width: 150px;
+    background-size: contain;
+}
+
+.mouse-mmb {
+    background-repeat: no-repeat;
+    background-image: url('mouse_MMB.png');
+    width: 150px;
+    background-size: contain;
 }
